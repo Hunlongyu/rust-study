@@ -1,4 +1,4 @@
-use rand::{Rng};
+use rand::Rng;
 use std::io;
 use std::cmp::Ordering;
 
