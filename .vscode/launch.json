@@ -5,12 +5,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "lldb",
+      "name": "(Windows) Launch",
+      "type": "cppvsdbg",
       "request": "launch",
-      "name": "Launch",
-      "program": "${workspaceFolder}/one/",
-      "args": ["cargo run"],
-      "cwd": "${workspaceFolder}"
+      "program": "${workspaceFolder}/one/target/debug/one.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "preLaunchTask": "build"
     }
   ]
 }
